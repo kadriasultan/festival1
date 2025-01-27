@@ -1,0 +1,135 @@
+/* Algemene stijlen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff3e6; /* Achtergrondkleur van de pagina */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Verwijder horizontale scrollbalken */
+}
+/* public/css/styles.css */
+.social-media-links a {
+    transition: color 0.2s ease;
+}
+
+.social-media-links a:hover {
+    text-decoration: underline;
+}
+.flex.gap-4 {
+    margin-left: auto; /* Zorgt dat de navigatielinks naar de rechterkant bewegen */
+}
+.swiper-container {
+    width: 100%; /* Zorg ervoor dat de Swiper-container de volledige breedte heeft */
+    max-width: 800px; /* Maximaliseer de breedte van de Swiper-container */
+    margin: 0 auto; /* Centreer de Swiper-container */
+    margin-bottom: 5%;
+}
+
+.swiper-slide {
+    display: flex; /* Flexbox gebruiken om de video te centreren */
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center; /* Verticaal centreren */
+    overflow: hidden; /* Verberg eventuele overloop */
+    height: 400px; /* Stel een vaste hoogte in voor de slide */
+}
+
+video {
+    max-width: 90%; /* Zorg ervoor dat de video maximaal 90% van de slide breedte gebruikt */
+    max-height: 90%; /* Zorg ervoor dat de video maximaal 90% van de slide hoogte gebruikt */
+    object-fit: contain; /* Zorg ervoor dat de video de slide vult zonder vervorming */
+}
+
+
+/* Afbeeldingssectie */
+.header-image {
+    text-align: center; /* Centreer de afbeelding */
+    margin: 20px 0; /* Voeg wat marge toe boven en onder de afbeelding */
+}
+
+.header-image img {
+    display: block; /* Verwijdert eventuele ruimte onder de afbeelding */
+    width: 50%; /* Breedte van de afbeelding */
+    height: 300px; /* Hoogte van de afbeelding */
+    object-fit: cover; /* Houdt de verhoudingen intact zonder vervorming */
+    border-radius: 10px; /* Afronde hoeken */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
+    margin: 0 auto; /* Centreert de afbeelding horizontaal */
+}
+
+.welcome-text {
+    text-align: center; /* Centreer de tekst */
+    margin: 20px 0; /* Voeg wat marge toe boven en onder de tekst */
+    padding: 20px; /* Voeg padding toe voor extra ruimte */
+    background-color: #ffebcc; /* Achtergrondkleur voor de welkomstsectie */
+    border-radius: 5px; /* Ronde hoeken voor de achtergrond */
+}
+
+.welcome-text h2 {
+    color: #ff6f61; /* Kleur voor de titel */
+    margin-bottom: 10px; /* Ruimte onder de titel */
+}
+
+.welcome-text p {
+    color: #333; /* Kleur voor de paragraaf tekst */
+    font-size: 16px; /* Pas de lettergrootte aan */
+}
+
+/* Festival kaarten */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.grid div {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.grid div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.grid div h3 {
+    font-size: 18px;
+    color: #ff6f61; /* Kleur voor de festival titel */
+    margin-bottom: 8px;
+}
+
+.grid div p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Zoekveld */
+input[type="text"] {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ff6f61; /* Kleur voor focus */
+    box-shadow: 0 0 6px rgba(255, 111, 97, 0.4);
+}
+
+/* Footer */
+footer {
+    background: red; /* Donkerrode kleur voor de footer */
+    color: #ffffff; /* Witte tekstkleur */
+    text-align: center;
+    padding: 20px 0;
+}
